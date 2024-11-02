@@ -1,0 +1,23 @@
+@charset "UTF-8";
+dl{
+    width: 990px;
+    border-top: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+    border-left: 1px solid #cccccc;
+}
+
+dl dt{
+    float: left;
+    padding: 1em;
+    color: #000000;
+}
+
+dl dd{
+    border-bottom: 1px solid #000000;
+    margin: 0;
+    padding: 1em 0 1em 18em;
+}
+
+input[type="email"]{
+    width: 50%;
+}

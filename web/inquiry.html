@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="descriotion" content="バグ報告、感想などの連絡専用のサイトです">
+    <title>
+        バグ報告、感想など
+    </title>
+    <link rel="stylesheet" href="css/necolas.github.io_normalize.css_8.0.1_normalize.css">
+    <link rel="stylesheet" href="css/inquirystyle.css">
+</head>
+<body class="back">
+    <form action="program.php" method="post">
+        <dl>
+            <dt>連絡の内容</dt>
+            <dd>
+                <label><input type="checkbox" name="category" value="バグ報告">バグ報告</label>
+                <label><input type="checkbox" name="category" value="感想">感想</label>
+                <label><input type="checkbox" name="category" value="その他">その他</label>
+            </dd>
+            <dt>お名前</dt>
+            <dd>
+                <input type="text" name="name">
+            </dd>
+            <dt>ふりがな</dt>
+            <dd>
+                <input type="text" name="kana">
+            </dd>
+            <dt>メールアドレス</dt>
+            <dd>
+                <input type="email" name="email">
+            </dd>
+            <dt>性別</dt>
+            <dd>
+                <label><input type="radio" name="sex" value="男">男</label>
+                <label><input type="radio" name="sex" value="女">女</label>
+            </dd>
+            <dt>ゲーム名</dt>
+            <dd>
+                <select name="gamename">
+                    <option value="選択してください。">選択してください。</option>
+                    <option value="1.ミステリールーム">1.ミステリールーム</option>
+                    <option value="2.スペースシューター">2.スペースシューター</option>
+                </select>
+            </dd>
+            <dt>本文</dt>
+            <dd>
+                <textarea name="content" cols="50" rows="10">
+                </textarea>
+            </dd>
+        </dl>
+        <p class="submit"><input type="submit" name="submit" value="送信する"></p>
+        <p><a href="index.html">トップページ</a></p>
+    </form>
+</body>
